@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Brain Breaks</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+
+<body class="w3-light-grey">
+    <style>
+        body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+    </style>   
+    
+    <div class="w3-content" style="max-width:1400px">
+
+    <!-- Header -->
+    <header class="w3-container w3-xxxlarge w3-center w3-padding-32"> 
+    <h1><b>Brain Break</b></h1>
+    <p></p>
+    </header>
+
+    <!-- Grid -->
+    <div class="w3-row">
+
+    <!-- Blog entries -->
+    <div class="w3-col l8 s12">
+    <!-- EXERCISE BLOCK BEGINS -->
+    <div class="w3-card-4 w3-margin w3-white">
+        <div class="w3-container">
+        <h2><b>Your Exercises!</b></h2>
+        <h3>{% for exerc in exercises %} 
+            {{exerc}}<br><br>
+            {% endfor %}</h3>
+        </div>
+        
+    </div>
+    <hr>
+    <!-- END Exercise block -->
+    </div>
+    <!-- Introduction menu -->
+    <div class="w3-col l4">
+    <!-- About Card -->
+    <div class="w3-card-1 w3-margin w3-margin-top">
+        <div class="w3-container w3-white">
+        <h4><b>Use</b></h4>
+        <p>To generate a new set of exercises refresh your browser window.</p>
+        <p>'A Brain Break' is a short break to help refocus students and get them ready to learn again.</p><br>
+        <p>Special thanks to the P2 Peace 2015-2016 class for the inspiration to write this webapp.</p>
+        </div>
+          
+  <div class=" w3-center w3-xxxlarge w3-section">
+   <a href="https://github.com/csolvex"><i class="fa fa-github w3-hover-opacity"></i></a>
+   <a href="https://gitlab.com/csolvex"><i class="fa fa-gitlab w3-hover-opacity"></i></a>
+   <!-- <a href="your link here"><i class="fa fa-twitter w3-hover-opacity"></i></a> -->
+  </div>
+    <p>C J Spiteri 2017 </p> 
+    <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+  </div><hr>
+    
+    
+    
+    
+    <!-- END Introduction Menu -->
+    </div>
+
+    <!-- END GRID -->
+    </div><br>
+
+    <!-- END w3-content -->
+    </div>
+
+
+
+</body>
+</html>
